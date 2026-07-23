@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schefflerdle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="masthead">
+  <div class="eyebrow" id="eyebrow">MAJOR CHAMPIONSHIP DAILY</div>
+  <h1>Schefflerdle</h1>
+  <div class="dateline" id="dateline"></div>
+</div>
+
+<div class="tab-row">
+  <button class="tab-btn active" id="dailyTab" data-type="daily">Daily</button>
+  <button class="tab-btn" id="unlimitedTab" data-type="unlimited">Unlimited</button>
+</div>
+
+<div class="mode-row">
+  <label class="mode-toggle">
+    <input type="checkbox" id="modeToggle">
+    <span class="toggle-track"><span class="toggle-thumb"></span></span>
+    <span class="mode-label">Include retired legends</span>
+  </label>
+  <button id="newRoundBtn" class="new-round-btn" style="display:none;">New Golfer &#8635;</button>
+  <button id="viewResultBtn" class="view-result-btn" style="display:none;">View Result</button>
+</div>
+
+<div class="scorecard" id="scorecard">
+  <div class="scorecard-header">
+    <span>HOLE</span>
+    <span class="header-clue">CLUE</span>
+  </div>
+  <div id="holeList"></div>
+</div>
+
+<div class="guess-panel" id="guessPanel">
+  <div class="guess-input-wrap">
+    <input type="text" id="guessInput" autocomplete="off" placeholder="Type a golfer's name..." />
+    <div id="suggestions" class="suggestions"></div>
+  </div>
+  <button id="guessBtn">Guess</button>
+  <button id="skipBtn" class="skip-btn" title="Reveal the next hint (counts as a try)">Skip &#8677;</button>
+</div>
+
+<div class="guess-history" id="guessHistory"></div>
+
+<div class="result-overlay" id="resultOverlay">
+  <div class="result-banner" id="resultBanner">
+    <button class="close-btn" id="closeResultBtn" aria-label="Close">&times;</button>
+    <div class="stamp" id="stamp"></div>
+    <div class="answer-line" id="answerLine"></div>
+    <div class="share-row">
+      <div class="share-grid" id="shareGrid"></div>
+      <button id="shareBtn">Copy result</button>
+    </div>
+  </div>
+</div>
+
+<div class="footer-note">New golfer every day &middot; hints get easier with every wrong guess</div>
+
+<script src="{{ url_for('static', filename='game.js') }}"></script>
+</body>
+</html>

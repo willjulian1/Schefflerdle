@@ -1,0 +1,577 @@
+[
+  {
+    "id": "tiger_woods",
+    "name": "Tiger Woods",
+    "aliases": ["tiger woods", "tiger"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1996 and was PGA Tour Player of the Year a record number of times.",
+      "Born in Cypress, California, and played college golf at Stanford before turning pro.",
+      "Has won 15 major championships, second all-time only to Jack Nicklaus.",
+      "Long associated with Nike and famous for wearing a red shirt on Sunday.",
+      "Held all four major titles at once during 2000-2001, a feat nicknamed after him.",
+      "Completed one of sports' greatest comebacks by winning the 2019 Masters after years of injury."
+    ]
+  },
+  {
+    "id": "jack_nicklaus",
+    "name": "Jack Nicklaus",
+    "aliases": ["jack nicklaus", "the golden bear"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1961 after a standout amateur career at Ohio State.",
+      "Born in Columbus, Ohio, and known for his powerful, high ball flight.",
+      "Holds the record for most men's major championships won, with 18.",
+      "Also one of the most prolific golf course designers in history.",
+      "Nicknamed 'The Golden Bear' for his blond hair and build.",
+      "His epic 1986 Masters win at age 46 is considered one of golf's greatest moments."
+    ]
+  },
+  {
+    "id": "arnold_palmer",
+    "name": "Arnold Palmer",
+    "aliases": ["arnold palmer", "the king"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1954 and helped popularize golf on television.",
+      "Born in Latrobe, Pennsylvania, the son of a golf course superintendent.",
+      "Won 7 major championships and 62 PGA Tour events overall.",
+      "His army of passionate fans became famously known as 'Arnie's Army.'",
+      "Nicknamed 'The King,' he also lent his name to a half-lemonade, half-iced-tea drink.",
+      "One of the 'Big Three' golfers of the 1960s alongside Nicklaus and Player."
+    ]
+  },
+  {
+    "id": "gary_player",
+    "name": "Gary Player",
+    "aliases": ["gary player", "the black knight"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1953 and became known for his relentless fitness regimen.",
+      "Born in Johannesburg, South Africa, one of the sport's first true global stars.",
+      "Won 9 major championships across three different decades.",
+      "Almost always wore all black on the course.",
+      "Nicknamed 'The Black Knight' or 'Mr. Fitness.'",
+      "One of only five golfers to complete the career Grand Slam, alongside Nicklaus, Hogan, Sarazen, and Woods."
+    ]
+  },
+  {
+    "id": "tom_watson",
+    "name": "Tom Watson",
+    "aliases": ["tom watson"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1971 after graduating from Stanford.",
+      "Born in Kansas City, Missouri, and known for his excellent links golf.",
+      "Won 8 major championships, including 5 Open Championships.",
+      "Engaged in a legendary head-to-head battle with Jack Nicklaus at the 1977 Open, the 'Duel in the Sun.'",
+      "Nearly won an improbable 6th Open Championship in 2009 at age 59.",
+      "Famous for chipping in on the 17th hole to win the 1982 U.S. Open at Pebble Beach."
+    ]
+  },
+  {
+    "id": "seve_ballesteros",
+    "name": "Seve Ballesteros",
+    "aliases": ["seve ballesteros", "seve"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1974 as a teenager from a farming family.",
+      "Born in Pedrena, Spain, and famed for his flair and creative recovery shots.",
+      "Won 5 major championships, including the Masters twice.",
+      "A driving force behind Europe's Ryder Cup resurgence, both as player and captain.",
+      "Won the 1979 Open Championship partly from a parking lot, earning the nickname 'the car park champion.'",
+      "Widely considered the most charismatic European golfer of his generation."
+    ]
+  },
+  {
+    "id": "nick_faldo",
+    "name": "Nick Faldo",
+    "aliases": ["nick faldo"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1976 and later rebuilt his swing from scratch mid-career.",
+      "Born in Welwyn Garden City, England, known for meticulous, disciplined play.",
+      "Won 6 major championships, including 3 Masters titles.",
+      "Famously outlasted Greg Norman's final-round collapse to win the 1996 Masters.",
+      "Went on to become a leading golf broadcaster after his playing career.",
+      "Captained Europe's Ryder Cup team in 2008."
+    ]
+  },
+  {
+    "id": "greg_norman",
+    "name": "Greg Norman",
+    "aliases": ["greg norman", "the shark"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1976 and spent 331 total weeks ranked world No. 1.",
+      "Born in Mount Isa, Queensland, Australia.",
+      "Won 2 major championships, both Open Championships.",
+      "Known for his aggressive play and bleach-blond hair.",
+      "Nicknamed 'The Shark,' with a logo to match.",
+      "Later became the driving force and CEO behind the LIV Golf league."
+    ]
+  },
+  {
+    "id": "phil_mickelson",
+    "name": "Phil Mickelson",
+    "aliases": ["phil mickelson", "lefty"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1992 and won a PGA Tour event while still an amateur.",
+      "Born in San Diego, California, and plays left-handed despite being right-handed otherwise.",
+      "Won 6 major championships, including 3 Masters titles.",
+      "Became the oldest major champion in history at the 2021 PGA Championship, age 50.",
+      "Nicknamed 'Lefty,' known for his go-for-broke style and fan-friendly demeanor.",
+      "Left the PGA Tour to become a founding star of the LIV Golf league in 2022."
+    ]
+  },
+  {
+    "id": "ernie_els",
+    "name": "Ernie Els",
+    "aliases": ["ernie els", "the big easy"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1989 and is known for one of the smoothest swings in golf.",
+      "Born in Johannesburg, South Africa.",
+      "Won 4 major championships, including 2 U.S. Opens and 2 Open Championships.",
+      "Nicknamed 'The Big Easy' for his relaxed tempo and demeanor.",
+      "Also built a successful wine and golf course design business.",
+      "Won the 2012 Open Championship after Adam Scott bogeyed the last four holes."
+    ]
+  },
+  {
+    "id": "vijay_singh",
+    "name": "Vijay Singh",
+    "aliases": ["vijay singh"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1982 and became famous for hitting more range balls than anyone on tour.",
+      "Born in Lautoka, Fiji, the first male golfer from Asia to reach world No. 1.",
+      "Won 3 major championships, including 2 PGA Championships.",
+      "Named PGA Tour Player of the Year in 2004 at age 41.",
+      "Known simply as 'Vijay' to golf fans worldwide.",
+      "Won 9 PGA Tour events in his standout 2004 season."
+    ]
+  },
+  {
+    "id": "padraig_harrington",
+    "name": "Padraig Harrington",
+    "aliases": ["padraig harrington"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1995 after a career as an accountant.",
+      "Born in Dublin, Ireland, known for his relentless work ethic on the range.",
+      "Won 3 major championships in a two-year span, 2007-2008.",
+      "Won back-to-back Open Championships, the first European to do so in decades.",
+      "Later captained Europe's Ryder Cup team in 2021.",
+      "Has become a dominant force on the PGA Tour Champions in his 50s."
+    ]
+  },
+  {
+    "id": "justin_leonard",
+    "name": "Justin Leonard",
+    "aliases": ["justin leonard"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1994 after an outstanding amateur career at the University of Texas.",
+      "Born in Dallas, Texas.",
+      "Won 1 major championship, the 1997 Open Championship at Royal Troon.",
+      "Sank a legendary long birdie putt on the 17th hole at Brookline in the 1999 Ryder Cup.",
+      "That putt sparked a wild celebration that overran the green before Jose Maria Olazabal could putt.",
+      "Known for one of the greatest comeback wins in Ryder Cup history, the 'Miracle at Brookline.'"
+    ]
+  },
+  {
+    "id": "davis_love_iii",
+    "name": "Davis Love III",
+    "aliases": ["davis love iii", "davis love"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1985, the son of a PGA teaching professional.",
+      "Born in Charlotte, North Carolina, known for his smooth, powerful swing.",
+      "Won 1 major championship, the 1997 PGA Championship.",
+      "Captained the U.S. Ryder Cup team in both 2012 and 2016.",
+      "Won 21 PGA Tour titles over a two-decade career.",
+      "One of the most respected veterans and Ryder Cup figures of his generation."
+    ]
+  },
+  {
+    "id": "fred_couples",
+    "name": "Fred Couples",
+    "aliases": ["fred couples", "boom boom"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1980 and became known for one of the most effortless swings in golf.",
+      "Born in Seattle, Washington.",
+      "Won 1 major championship, the 1992 Masters.",
+      "Nicknamed 'Boom Boom' for his prodigious driving distance.",
+      "Was world No. 1 and PGA Player of the Year in 1991-92.",
+      "Remains a fan favorite and dominant force on the PGA Tour Champions."
+    ]
+  },
+  {
+    "id": "payne_stewart",
+    "name": "Payne Stewart",
+    "aliases": ["payne stewart"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1979 and was instantly recognizable for his old-fashioned style.",
+      "Born in Springfield, Missouri.",
+      "Won 3 major championships, including 2 U.S. Opens.",
+      "Famous for wearing plus-fours (knickers) and colorful tam o'shanter caps on course.",
+      "Won the 1999 U.S. Open at Pinehurst with a dramatic final-hole putt.",
+      "Died tragically in a plane crash just months after that final major win."
+    ]
+  },
+  {
+    "id": "ben_hogan",
+    "name": "Ben Hogan",
+    "aliases": ["ben hogan"],
+    "retired": true,
+    "hints": [
+      "Turned pro in the 1930s and became renowned for his precise ball-striking.",
+      "Born in Dublin, Texas, and rose from a difficult childhood to golf greatness.",
+      "Won 9 major championships despite a near-fatal car accident in 1949.",
+      "Won 3 majors in a single year, 1953, later dubbed the 'Triple Crown.'",
+      "His life story was depicted in the film 'Follow the Sun.'",
+      "Regarded as one of the greatest ball-strikers ever, author of 'Five Lessons: The Modern Fundamentals of Golf.'"
+    ]
+  },
+  {
+    "id": "sam_snead",
+    "name": "Sam Snead",
+    "aliases": ["sam snead", "slammin sammy"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1934 and played competitively into his 60s.",
+      "Born in Ashwood, Virginia, known for one of the most naturally fluid swings ever.",
+      "Won 7 major championships and holds the record for most PGA Tour wins, 82.",
+      "Nicknamed 'Slammin' Sammy' for his power off the tee.",
+      "Famous for his trademark straw hat.",
+      "Never won the U.S. Open despite finishing runner-up four times."
+    ]
+  },
+  {
+    "id": "byron_nelson",
+    "name": "Byron Nelson",
+    "aliases": ["byron nelson"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1932 and later became a respected golf broadcaster.",
+      "Born in Fort Worth, Texas.",
+      "Won 5 major championships in a relatively short competitive career.",
+      "Won an astonishing 11 consecutive PGA Tour events in 1945, a record that still stands.",
+      "Won 18 total events that same year, also a still-standing record.",
+      "A PGA Tour event, the AT&T Byron Nelson, is named in his honor."
+    ]
+  },
+  {
+    "id": "bobby_jones",
+    "name": "Bobby Jones",
+    "aliases": ["bobby jones", "bobby jones jr"],
+    "retired": true,
+    "hints": [
+      "Never turned professional, remaining an amateur his entire competitive career.",
+      "Born in Atlanta, Georgia, and trained originally as a lawyer.",
+      "Won 7 major championships (by modern count) purely as an amateur golfer.",
+      "Completed the original Grand Slam in 1930, winning all four majors of that era in one year.",
+      "Retired from competition at just 28, right after that Grand Slam.",
+      "Co-founded Augusta National Golf Club and the Masters Tournament."
+    ]
+  },
+  {
+    "id": "walter_hagen",
+    "name": "Walter Hagen",
+    "aliases": ["walter hagen", "the haig"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1912 and helped elevate professional golfers' social standing.",
+      "Born in Rochester, New York.",
+      "Won 11 major championships, including 5 PGA Championships.",
+      "Nicknamed 'The Haig,' famous for his flamboyant lifestyle and showmanship.",
+      "Won 4 consecutive PGA Championships from 1924-1927.",
+      "Often credited with popularizing golf as a viable, glamorous profession."
+    ]
+  },
+  {
+    "id": "rory_mcilroy",
+    "name": "Rory McIlroy",
+    "aliases": ["rory mcilroy", "rory"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2007 as a teenager out of Holywood, Northern Ireland.",
+      "Known for his combination of power off the tee and smooth tempo.",
+      "Won his first major, the 2011 U.S. Open, by a record-setting margin.",
+      "Spent years chasing the career Grand Slam after winning three of the four majors by his mid-20s.",
+      "Finally completed the career Grand Slam by winning the 2025 Masters in a playoff.",
+      "Widely regarded as the leading European golfer of his generation."
+    ]
+  },
+  {
+    "id": "jon_rahm",
+    "name": "Jon Rahm",
+    "aliases": ["jon rahm", "jon rahm rodriguez"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2016 after a standout college career at Arizona State.",
+      "Born in Barrika, Spain, and known for his fiery intensity on course.",
+      "Won the 2021 U.S. Open and the 2023 Masters.",
+      "Was born with a clubfoot, giving him an unusually short, powerful swing.",
+      "Left the PGA Tour for a lucrative move to LIV Golf in late 2023.",
+      "Often mentioned alongside Seve Ballesteros as Spain's greatest golfing talent."
+    ]
+  },
+  {
+    "id": "scottie_scheffler",
+    "name": "Scottie Scheffler",
+    "aliases": ["scottie scheffler", "scottie"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2018 after an All-American career at the University of Texas.",
+      "Born in Ridgewood, New Jersey, but raised in Dallas, Texas.",
+      "Known for spending long stretches as the world's top-ranked golfer.",
+      "Has won multiple Masters titles, including in 2022 and 2024.",
+      "Known for an unorthodox, rock-solid putting grip and a quiet, methodical demeanor.",
+      "Widely regarded as the most dominant golfer in the world in the mid-2020s."
+    ]
+  },
+  {
+    "id": "jordan_spieth",
+    "name": "Jordan Spieth",
+    "aliases": ["jordan spieth"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2012 after starring at the University of Texas.",
+      "Born in Dallas, Texas, known for his exceptional putting and course management.",
+      "Won 3 of the 4 majors before turning 24, missing only the PGA Championship.",
+      "Suffered a painful final-round collapse at the 2016 Masters after leading by 5 shots.",
+      "Won the 2015 Masters and 2015 U.S. Open in the same season.",
+      "Has spent years chasing the career Grand Slam, needing only the PGA Championship."
+    ]
+  },
+  {
+    "id": "justin_thomas",
+    "name": "Justin Thomas",
+    "aliases": ["justin thomas", "jt"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2013, the son of a PGA club professional.",
+      "Born in Louisville, Kentucky, and close childhood friends with Jordan Spieth.",
+      "Has won 2 PGA Championships, in 2017 and 2022.",
+      "Shot a record-tying 59 in a PGA Tour round early in his career.",
+      "Known simply by his initials, 'JT,' among fans and fellow players.",
+      "A key member of recent U.S. Presidents Cup and Ryder Cup teams."
+    ]
+  },
+  {
+    "id": "dustin_johnson",
+    "name": "Dustin Johnson",
+    "aliases": ["dustin johnson", "dj"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2007 and became known for elite athleticism and effortless power.",
+      "Born in Columbia, South Carolina.",
+      "Won the 2016 U.S. Open and the 2020 Masters.",
+      "Spent over 130 weeks ranked world No. 1 across his career.",
+      "Won the pandemic-delayed 2020 Masters by a record 5 strokes in November.",
+      "Left the PGA Tour to become a founding LIV Golf star in 2022."
+    ]
+  },
+  {
+    "id": "brooks_koepka",
+    "name": "Brooks Koepka",
+    "aliases": ["brooks koepka"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2012 and built his early career playing on European and Challenge Tours.",
+      "Born in West Palm Beach, Florida, known for elite fitness and a calm demeanor under pressure.",
+      "Has won 5 major championships, including back-to-back U.S. Opens in 2017-2018.",
+      "Also won back-to-back PGA Championships in 2018-2019.",
+      "Known for saving his best golf specifically for major championship weeks.",
+      "Won the 2023 PGA Championship as one of LIV Golf's biggest stars."
+    ]
+  },
+  {
+    "id": "collin_morikawa",
+    "name": "Collin Morikawa",
+    "aliases": ["collin morikawa"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2019 after an outstanding college career at Cal Berkeley.",
+      "Born in Los Angeles, California, known for extremely precise iron play.",
+      "Won the 2020 PGA Championship in just his second career major start.",
+      "Also won the 2021 Open Championship at Royal St George's.",
+      "Considered one of the most accurate ball-strikers of his generation.",
+      "Won two different major championships before turning 25."
+    ]
+  },
+  {
+    "id": "xander_schauffele",
+    "name": "Xander Schauffele",
+    "aliases": ["xander schauffele", "xander"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2015 after playing college golf at San Diego State.",
+      "Born in San Diego, California, to a French father and Japanese-American mother.",
+      "Won Olympic gold in golf at the 2021 Tokyo Games.",
+      "Spent years as one of the best players without a major before breaking through.",
+      "Won both the PGA Championship and the Open Championship in 2024.",
+      "Known for a relaxed, understated personality despite his elite results."
+    ]
+  },
+  {
+    "id": "bryson_dechambeau",
+    "name": "Bryson DeChambeau",
+    "aliases": ["bryson dechambeau", "bryson"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2016 after winning the NCAA title and U.S. Amateur in the same year.",
+      "Born in Modesto, California, nicknamed 'The Scientist' for his analytical approach.",
+      "Famously bulked up dramatically to add driving distance in 2020.",
+      "Won the 2020 U.S. Open at Winged Foot after that transformation.",
+      "Left the PGA Tour to join LIV Golf in 2022.",
+      "Won a second U.S. Open in 2024 at Pinehurst with a dramatic closing bunker shot."
+    ]
+  },
+  {
+    "id": "viktor_hovland",
+    "name": "Viktor Hovland",
+    "aliases": ["viktor hovland"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2019 after winning the U.S. Amateur while at Oklahoma State.",
+      "Born in Oslo, Norway, one of the country's first true golf stars.",
+      "Known for elite ball-striking paired with a famously inconsistent short game for years.",
+      "Was low amateur at the 2019 Masters before turning professional.",
+      "A fan favorite for his outgoing, chatty personality on course.",
+      "Has emerged as one of the world's top-ranked players without yet winning a major."
+    ]
+  },
+  {
+    "id": "matt_fitzpatrick",
+    "name": "Matt Fitzpatrick",
+    "aliases": ["matt fitzpatrick", "matthew fitzpatrick"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2014 after winning the U.S. Amateur while at Northwestern.",
+      "Born in Sheffield, England.",
+      "Won the 2013 U.S. Amateur at Brookline.",
+      "Returned to that same course nine years later and won the 2022 U.S. Open there.",
+      "Known for one of the most compact, repeatable swings on tour.",
+      "Became the first golfer to win both the U.S. Amateur and U.S. Open at the same course."
+    ]
+  },
+  {
+    "id": "shane_lowry",
+    "name": "Shane Lowry",
+    "aliases": ["shane lowry"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2009 after winning the Irish Open as an amateur.",
+      "Born in Clara, County Offaly, Ireland.",
+      "Won the 2019 Open Championship at Royal Portrush, Northern Ireland's first Open in decades.",
+      "Won that title in front of an emotional, deafening home crowd.",
+      "Known for his warm, easygoing personality off the course.",
+      "A key contributor to recent European Ryder Cup teams."
+    ]
+  },
+  {
+    "id": "francesco_molinari",
+    "name": "Francesco Molinari",
+    "aliases": ["francesco molinari"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2002 and played alongside his brother Edoardo for years.",
+      "Born in Turin, Italy.",
+      "Won the 2018 Open Championship at Carnoustie.",
+      "Became the first Italian golfer ever to win a major championship.",
+      "Went undefeated in five matches at the 2018 Ryder Cup.",
+      "Famous for his metronomic, error-free ball-striking during his 2018 peak."
+    ]
+  },
+  {
+    "id": "adam_scott",
+    "name": "Adam Scott",
+    "aliases": ["adam scott"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2000 after being mentored early on by Greg Norman.",
+      "Born in Adelaide, Australia.",
+      "Won the 2013 Masters in a playoff after a dramatic birdie putt.",
+      "Became the first Australian ever to win the Masters.",
+      "Was among the first prominent players to popularize the long, anchored putter.",
+      "Reached world No. 1 in 2014 after years as one of the game's smoothest swingers."
+    ]
+  },
+  {
+    "id": "sergio_garcia",
+    "name": "Sergio Garcia",
+    "aliases": ["sergio garcia", "el nino"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1999 as a teenage prodigy from Spain.",
+      "Born in Borriol, Spain, nicknamed 'El Nino' for his youthful breakthrough.",
+      "Spent nearly two decades as one of the best players without a major title.",
+      "Finally broke through by winning the 2017 Masters in a playoff.",
+      "Emotional win came on what would have been Seve Ballesteros's 60th birthday.",
+      "Later joined LIV Golf as a team captain and owner."
+    ]
+  },
+  {
+    "id": "henrik_stenson",
+    "name": "Henrik Stenson",
+    "aliases": ["henrik stenson"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1999 and became known for one of the purest iron games in golf.",
+      "Born in Gothenburg, Sweden.",
+      "Won a legendary duel with Phil Mickelson at the 2016 Open Championship.",
+      "Both players shattered the previous major championship scoring record that week.",
+      "Became the first Swedish golfer to win a men's major championship.",
+      "Later served as the inaugural European captain courted by LIV Golf."
+    ]
+  },
+  {
+    "id": "zach_johnson",
+    "name": "Zach Johnson",
+    "aliases": ["zach johnson"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1998 after college golf at Drake University.",
+      "Born in Iowa City, Iowa, known for his precise short game despite modest length.",
+      "Won the 2007 Masters by consistently laying up on the par-5s all week.",
+      "Also won the 2015 Open Championship at St Andrews in a playoff.",
+      "Known for his devout faith, often referencing it in victory speeches.",
+      "Later served as U.S. Ryder Cup captain in 2023."
+    ]
+  },
+  {
+    "id": "keegan_bradley",
+    "name": "Keegan Bradley",
+    "aliases": ["keegan bradley"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2008 after college golf at St. John's University.",
+      "Born in Woodstock, Vermont, nephew of LPGA Hall of Famer Pat Bradley.",
+      "Won the 2011 PGA Championship in his first career major start.",
+      "Was one of the last prominent players to use a long, anchored putter before it was banned.",
+      "Named U.S. Ryder Cup captain for the 2025 matches.",
+      "Pushed to make himself a playing captain, an idea much discussed in golf media."
+    ]
+  },
+  {
+    "id": "john_daly",
+    "name": "John Daly",
+    "aliases": ["john daly"],
+    "retired": true,
+    "hints": [
+      "A fan-favorite nicknamed the PGAs 'Wild Thing'.",
+      "He won his local club championship at 13 years old.",
+      "Holds the record for the highest score on a single hole at a PGA tour event (18).",
+      "Known as the heaviest drinker on the tour, he was often drunk during tournaments.",
+      "He won the 1991 PGA Championship as a ninth alternate after driving through the night to make it.",
+      "His unorthodox swing made him one of the longest hitters on the tour, with the club being almost vertical at the apex."
+
+    ]
+  }
+]
