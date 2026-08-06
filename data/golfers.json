@@ -571,7 +571,552 @@
       "Known as the heaviest drinker on the tour, he was often drunk during tournaments.",
       "He won the 1991 PGA Championship as a ninth alternate after driving through the night to make it.",
       "His unorthodox swing made him one of the longest hitters on the tour, with the club being almost vertical at the apex."
-
+    ]
+  },
+  {
+    "id": "jimmy_demaret",
+    "name": "Jimmy Demaret",
+    "aliases": ["jimmy demaret"],
+    "retired": true,
+    "hints": [
+      "Turned pro in the late 1920s and became known as one of golf's earliest style icons.",
+      "Born in Houston, Texas.",
+      "Won 3 Masters titles, in 1940, 1947, and 1950.",
+      "Became the first three-time Masters champion in tournament history.",
+      "Famous for flamboyant, brightly colored outfits decades before it was common on tour.",
+      "Later co-hosted the pioneering TV series 'Shell's Wonderful World of Golf.'"
+    ]
+  },
+  {
+    "id": "cary_middlecoff",
+    "name": "Cary Middlecoff",
+    "aliases": ["cary middlecoff", "doc middlecoff"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1947 after first earning a dentistry degree.",
+      "Born in Halls, Tennessee.",
+      "Won 2 U.S. Opens, in 1949 and 1956, plus the 1955 Masters.",
+      "Nicknamed 'Doc' for his background as a practicing dentist.",
+      "Known for a deliberate, slow pre-shot routine that frustrated playing partners.",
+      "One of the dominant American major champions of the 1950s."
+    ]
+  },
+  {
+    "id": "billy_casper",
+    "name": "Billy Casper",
+    "aliases": ["billy casper"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1954 and quietly amassed 51 career PGA Tour wins.",
+      "Born in San Diego, California.",
+      "Won 2 U.S. Opens (1959, 1966) and the 1970 Masters.",
+      "Often overlooked historically despite ranking among the winningest golfers ever.",
+      "Famous for an unusually delicate, soft putting touch.",
+      "Later followed an unconventional diet, including buffalo meat, for health reasons."
+    ]
+  },
+  {
+    "id": "julius_boros",
+    "name": "Julius Boros",
+    "aliases": ["julius boros"],
+    "retired": true,
+    "hints": [
+      "Worked as an accountant before turning pro relatively late in his 20s.",
+      "Born in Fairfield, Connecticut, to Hungarian immigrant parents.",
+      "Won 2 U.S. Opens (1952, 1963) and the 1968 PGA Championship.",
+      "Became the oldest major champion in history at the time, winning the PGA at 48.",
+      "Known for an unhurried, relaxed swing that belied his competitiveness.",
+      "His PGA Championship record for oldest winner stood for decades."
+    ]
+  },
+  {
+    "id": "ken_venturi",
+    "name": "Ken Venturi",
+    "aliases": ["ken venturi"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1957 after several near-misses as one of the top amateurs in the country.",
+      "Born in San Francisco, California.",
+      "Won 1 major championship, the 1964 U.S. Open at Congressional.",
+      "Nearly collapsed from heat exhaustion while playing 36 holes in extreme heat on the final day.",
+      "Doctors reportedly monitored him between rounds as he pushed through to finish.",
+      "Later became a longtime, respected lead golf analyst for CBS."
+    ]
+  },
+  {
+    "id": "tony_jacklin",
+    "name": "Tony Jacklin",
+    "aliases": ["tony jacklin"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1962 and became Britain's first true global golf star in decades.",
+      "Born in Scunthorpe, England.",
+      "Won the 1969 Open Championship and the 1970 U.S. Open in back-to-back majors.",
+      "Was the first Englishman to win the U.S. Open in 50 years.",
+      "Held both the Open and U.S. Open titles at the same time.",
+      "Later captained Europe's Ryder Cup teams through their 1980s resurgence."
+    ]
+  },
+  {
+    "id": "johnny_miller",
+    "name": "Johnny Miller",
+    "aliases": ["johnny miller"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1969 after a standout amateur career in San Francisco.",
+      "Born in San Francisco, California.",
+      "Won the 1973 U.S. Open at Oakmont and the 1976 Open Championship.",
+      "Shot a final-round 63 at Oakmont to win that U.S. Open, still one of the greatest closing rounds ever.",
+      "Later became one of golf broadcasting's most blunt, opinionated lead analysts.",
+      "Known during his playing peak for extraordinarily precise iron play."
+    ]
+  },
+  {
+    "id": "andy_north",
+    "name": "Andy North",
+    "aliases": ["andy north"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1972 after college golf at the University of Florida.",
+      "Born in Thorp, Wisconsin.",
+      "Won 2 U.S. Opens, in 1978 and 1985.",
+      "Won both majors despite totaling only 3 PGA Tour wins in his entire career.",
+      "Considered one of the more surprising multi-major champions relative to overall record.",
+      "Later became a respected golf broadcaster."
+    ]
+  },
+  {
+    "id": "fuzzy_zoeller",
+    "name": "Fuzzy Zoeller",
+    "aliases": ["fuzzy zoeller"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1973 and became known for an easygoing, whistling demeanor on course.",
+      "Born in New Albany, Indiana.",
+      "Won the 1979 Masters in a playoff, in just his first career appearance at Augusta.",
+      "Also won the 1984 U.S. Open in an 18-hole playoff.",
+      "Nicknamed 'Fuzzy,' a childhood nickname derived from his middle name Urban.",
+      "One of very few golfers to win the Masters in their tournament debut."
+    ]
+  },
+  {
+    "id": "craig_stadler",
+    "name": "Craig Stadler",
+    "aliases": ["craig stadler", "the walrus"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1975 after winning the U.S. Amateur.",
+      "Born in San Diego, California.",
+      "Won 1 major championship, the 1982 Masters.",
+      "Nicknamed 'The Walrus' for his mustache and burly build.",
+      "Years later, was penalized on tour for kneeling on a towel to avoid getting his pants dirty, ruled as building a stance.",
+      "Later found continued success on the PGA Tour Champions."
+    ]
+  },
+  {
+    "id": "larry_mize",
+    "name": "Larry Mize",
+    "aliases": ["larry mize"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1980 and grew up just down the road from the course that made him famous.",
+      "Born and raised in Augusta, Georgia.",
+      "Won 1 major championship, the 1987 Masters.",
+      "Won it with a stunning long chip-in on the second hole of a playoff.",
+      "That shot beat Greg Norman, who was left devastated by the result.",
+      "Remains one of the most replayed shots in Masters history."
+    ]
+  },
+  {
+    "id": "scott_simpson",
+    "name": "Scott Simpson",
+    "aliases": ["scott simpson"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1977 after winning the NCAA individual title at USC.",
+      "Born in San Diego, California.",
+      "Won 1 major championship, the 1987 U.S. Open at the Olympic Club.",
+      "Held off a hard-charging Tom Watson down the stretch to win.",
+      "Known for a steady, error-free style of play.",
+      "One of several U.S. Open champions produced from San Diego's golf scene."
+    ]
+  },
+  {
+    "id": "tom_kite",
+    "name": "Tom Kite",
+    "aliases": ["tom kite"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1972 after a celebrated rivalry with Ben Crenshaw at the University of Texas.",
+      "Born in Austin, Texas.",
+      "Won 1 major championship, the 1992 U.S. Open at Pebble Beach, in brutal wind.",
+      "Spent years as one of the tour's most consistent money leaders before that breakthrough.",
+      "Later captained the U.S. Ryder Cup team in 1997.",
+      "Known for meticulous course preparation and a gritty, grinding style."
+    ]
+  },
+  {
+    "id": "lee_janzen",
+    "name": "Lee Janzen",
+    "aliases": ["lee janzen"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1986 after college golf at Florida Southern.",
+      "Born in Austin, Minnesota, and raised in Florida.",
+      "Won 2 U.S. Opens, in 1993 and 1998.",
+      "Both of his major wins came at the expense of the same golfer, Payne Stewart.",
+      "His 1998 win at the Olympic Club came after trailing Stewart by 5 shots entering the final round.",
+      "Known for clutch final-round performances in majors."
+    ]
+  },
+  {
+    "id": "steve_jones",
+    "name": "Steve Jones",
+    "aliases": ["steve jones"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1981 and missed nearly two full years after a serious dirt-bike injury to his hand.",
+      "Born in Phoenix, Arizona.",
+      "Won 1 major championship, the 1996 U.S. Open at Oakland Hills.",
+      "His win completed one of the more remarkable injury-comeback stories in golf.",
+      "Had to requalify for tour events after his time away from the game.",
+      "A determined grinder who rebuilt his career from the ground up."
+    ]
+  },
+  {
+    "id": "justin_rose",
+    "name": "Justin Rose",
+    "aliases": ["justin rose"],
+    "retired": false,
+    "hints": [
+      "Turned pro at just 17 years old in 1998, right after a famous amateur performance at the Open.",
+      "Born in Johannesburg, South Africa, and raised in England.",
+      "Won 1 major championship, the 2013 U.S. Open at Merion.",
+      "Also won the individual Olympic gold medal in golf's return to the Games in 2016.",
+      "Spent years as one of the most consistent top-10 major finishers without winning more.",
+      "Known for a smooth, classically sound swing."
+    ]
+  },
+  {
+    "id": "martin_kaymer",
+    "name": "Martin Kaymer",
+    "aliases": ["martin kaymer"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2006 and quickly rose to world No. 1 by his mid-20s.",
+      "Born in Dusseldorf, Germany.",
+      "Won the 2010 PGA Championship in a playoff and the 2014 U.S. Open at Pinehurst.",
+      "Led that U.S. Open from start to finish in dominant fashion.",
+      "Also holed the Ryder Cup-clinching putt for Europe at the 2012 'Miracle at Medinah.'",
+      "One of Germany's most successful golfers alongside Bernhard Langer."
+    ]
+  },
+  {
+    "id": "bobby_locke",
+    "name": "Bobby Locke",
+    "aliases": ["bobby locke", "old man par"],
+    "retired": true,
+    "hints": [
+      "Turned pro in the late 1930s and became South Africa's first true golfing superstar.",
+      "Born in Germiston, South Africa.",
+      "Won 4 Open Championships between 1949 and 1957.",
+      "Widely regarded as one of the greatest putters the game has ever seen.",
+      "Played with a distinctive hooded putting style that produced remarkable consistency.",
+      "Helped establish South Africa as a major golfing nation decades before Player and Els."
+    ]
+  },
+  {
+    "id": "peter_thomson",
+    "name": "Peter Thomson",
+    "aliases": ["peter thomson"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1946 and dominated links golf through the 1950s and 1960s.",
+      "Born in Melbourne, Australia.",
+      "Won 5 Open Championships between 1954 and 1965.",
+      "Won 3 of those titles in a row, from 1954 through 1956.",
+      "Rarely played full-time in the United States, focusing instead on Britain and Australasia.",
+      "Later became a respected golf course architect and writer."
+    ]
+  },
+  {
+    "id": "kel_nagle",
+    "name": "Kel Nagle",
+    "aliases": ["kel nagle"],
+    "retired": true,
+    "hints": [
+      "Turned pro in the mid-1940s after growing up in Sydney, Australia.",
+      "Born in Sydney, Australia.",
+      "Won 1 major championship, the 1960 Centenary Open Championship at St Andrews.",
+      "Edged Arnold Palmer by a single shot to win that historic anniversary edition.",
+      "Enjoyed one of the longest competitive careers in golf history, playing into his 70s.",
+      "A close friend and rival of fellow Australian Peter Thomson."
+    ]
+  },
+  {
+    "id": "roberto_de_vicenzo",
+    "name": "Roberto De Vicenzo",
+    "aliases": ["roberto de vicenzo", "roberto de vincenzo"],
+    "retired": true,
+    "hints": [
+      "Turned pro in the late 1930s and became one of Argentina's most beloved sporting figures.",
+      "Born in Buenos Aires, Argentina.",
+      "Won 1 major championship, the 1967 Open Championship at Hoylake, edging Jack Nicklaus.",
+      "The following year, signed an incorrect scorecard at the Masters that cost him a place in a playoff.",
+      "Handled that heartbreak with such grace it became a famous story of sportsmanship.",
+      "Remains one of the most universally admired figures in golf history."
+    ]
+  },
+  {
+    "id": "tom_weiskopf",
+    "name": "Tom Weiskopf",
+    "aliases": ["tom weiskopf"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1968 after college golf at Ohio State, the same program as Jack Nicklaus.",
+      "Born in Massillon, Ohio.",
+      "Won 1 major championship, the 1973 Open Championship at Royal Troon.",
+      "Finished runner-up at the Masters an agonizing four times in his career.",
+      "Known for a fiery temperament paired with one of the purest swings of his generation.",
+      "Later became a respected golf course architect and TV commentator."
+    ]
+  },
+  {
+    "id": "bill_rogers",
+    "name": "Bill Rogers",
+    "aliases": ["bill rogers"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1974 after college golf at the University of Houston.",
+      "Born in Waco, Texas.",
+      "Won 1 major championship, the 1981 Open Championship at Royal St George's.",
+      "That win capped a remarkable career year that also included a World Match Play title.",
+      "Burned out from the pressure of stardom and faded from top competitive golf soon after.",
+      "His rapid rise and quick decline remains a cautionary tale often cited in golf."
+    ]
+  },
+  {
+    "id": "mark_calcavecchia",
+    "name": "Mark Calcavecchia",
+    "aliases": ["mark calcavecchia"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1981 after college golf at the University of Florida.",
+      "Born in Laurel, Nebraska.",
+      "Won 1 major championship, the 1989 Open Championship at Royal Troon, in a playoff.",
+      "Beat Greg Norman and Wayne Grady in a four-hole aggregate playoff to win.",
+      "Remained a fixture on the PGA Tour and later PGA Tour Champions for decades.",
+      "Known for a long, looping swing and a fiery personality."
+    ]
+  },
+  {
+    "id": "ian_baker_finch",
+    "name": "Ian Baker-Finch",
+    "aliases": ["ian baker-finch", "ian baker finch"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1979 after a strong junior career in Australia.",
+      "Born in Nambour, Australia.",
+      "Won 1 major championship, the 1991 Open Championship at Royal Birkdale.",
+      "Later suffered one of the most public and severe driving slumps in professional golf.",
+      "That collapse eventually forced him out of competitive golf entirely.",
+      "Successfully transitioned afterward into a respected TV broadcasting career."
+    ]
+  },
+  {
+    "id": "nick_price",
+    "name": "Nick Price",
+    "aliases": ["nick price"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1977 and represented Zimbabwe throughout his career.",
+      "Born in Durban, South Africa, raised in Zimbabwe.",
+      "Won the 1992 and 1994 PGA Championships plus the 1994 Open Championship.",
+      "Reached world No. 1 during his dominant mid-1990s stretch.",
+      "Widely regarded as one of the fastest, most efficient players of any era.",
+      "Won 3 majors in a remarkably short span in the early-to-mid 1990s."
+    ]
+  },
+  {
+    "id": "john_daly",
+    "name": "John Daly",
+    "aliases": ["john daly", "long john"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1987 and became famous almost overnight for enormous driving distance.",
+      "Born in Carmichael, California.",
+      "Won the 1991 PGA Championship as the ninth alternate, with almost no practice rounds.",
+      "Also won the 1995 Open Championship at St Andrews in a playoff.",
+      "Known for the motto 'grip it and rip it' and a colorful, unpredictable off-course life.",
+      "Later became known for loud pants and a clothing line as much as his golf."
+    ]
+  },
+  {
+    "id": "david_duval",
+    "name": "David Duval",
+    "aliases": ["david duval"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1993 after a decorated college career at Georgia Tech.",
+      "Born in Jacksonville, Florida.",
+      "Reached world No. 1 in 1999 and won the 2001 Open Championship at Royal Lytham.",
+      "Shot a final-round 59 in a PGA Tour event during his dominant peak.",
+      "Known for wraparound sunglasses and a stoic, unreadable on-course demeanor.",
+      "Experienced one of the most dramatic competitive declines of any recent world No. 1."
+    ]
+  },
+  {
+    "id": "todd_hamilton",
+    "name": "Todd Hamilton",
+    "aliases": ["todd hamilton"],
+    "retired": false,
+    "hints": [
+      "Turned pro in the late 1980s and spent many years playing in Asia before reaching the PGA Tour.",
+      "Born in Galesburg, Illinois.",
+      "Won 1 major championship, the 2004 Open Championship at Royal Troon.",
+      "Famously used a hybrid-style club around the greens instead of a traditional chipping technique.",
+      "Beat Ernie Els in a four-hole playoff to win.",
+      "Remains one of the more unexpected major champions of the 2000s."
+    ]
+  },
+  {
+    "id": "lanny_wadkins",
+    "name": "Lanny Wadkins",
+    "aliases": ["lanny wadkins"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1971 after winning the U.S. Amateur.",
+      "Born in Richmond, Virginia.",
+      "Won 1 major championship, the 1977 PGA Championship, in a playoff over Gene Littler.",
+      "Known for an aggressive, fast-paced style of play throughout his career.",
+      "Became one of the most passionate and successful Ryder Cup competitors of his generation.",
+      "Later captained the U.S. Ryder Cup team in 1995."
+    ]
+  },
+  {
+    "id": "larry_nelson",
+    "name": "Larry Nelson",
+    "aliases": ["larry nelson"],
+    "retired": true,
+    "hints": [
+      "Didn't pick up golf seriously until after serving in the Vietnam War in his early 20s.",
+      "Born in Fort Payne, Alabama.",
+      "Won the 1981 and 1987 PGA Championships plus the 1983 U.S. Open.",
+      "One of the more remarkable late-starting success stories in professional golf.",
+      "Won 3 majors despite learning the game far later than most tour pros.",
+      "Later found continued success on the PGA Tour Champions."
+    ]
+  },
+  {
+    "id": "hal_sutton",
+    "name": "Hal Sutton",
+    "aliases": ["hal sutton"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1981 after winning both the U.S. Amateur and NCAA title.",
+      "Born in Shreveport, Louisiana.",
+      "Won 1 major championship, the 1983 PGA Championship, while touted as the game's next big star.",
+      "Later had a famous head-to-head duel with Tiger Woods down the stretch at a non-major event in 2000.",
+      "Captained the U.S. Ryder Cup team in 2004.",
+      "Known for a confident, sometimes brash competitive style."
+    ]
+  },
+  {
+    "id": "steve_elkington",
+    "name": "Steve Elkington",
+    "aliases": ["steve elkington"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1985 after college golf at the University of Houston.",
+      "Born in Wagga Wagga, Australia.",
+      "Won 1 major championship, the 1995 PGA Championship, in a playoff over Colin Montgomerie.",
+      "Widely regarded as having one of the most technically pure, textbook swings in golf history.",
+      "Battled sinus issues throughout his career that occasionally affected his play.",
+      "A frequent teaching reference for swing coaches even after retirement."
+    ]
+  },
+  {
+    "id": "mark_brooks",
+    "name": "Mark Brooks",
+    "aliases": ["mark brooks"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1984 after college golf at the University of Texas.",
+      "Born in Fort Worth, Texas.",
+      "Won 1 major championship, the 1996 PGA Championship, in a playoff over Kenny Perry.",
+      "Remained a steady tour presence for years without matching that major success again.",
+      "Known for a workmanlike, unflashy approach to the game.",
+      "One of several Texas products to win a major in the 1990s."
+    ]
+  },
+  {
+    "id": "david_toms",
+    "name": "David Toms",
+    "aliases": ["david toms"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1989 after college golf at LSU.",
+      "Born in Monroe, Louisiana.",
+      "Won 1 major championship, the 2001 PGA Championship at Atlanta Athletic Club.",
+      "Famously laid up short of the water on the final hole rather than risk going for the green.",
+      "Got up and down from there to win by one shot over Phil Mickelson.",
+      "Known for excellent course management and a smooth, compact swing."
+    ]
+  },
+  {
+    "id": "rich_beem",
+    "name": "Rich Beem",
+    "aliases": ["rich beem"],
+    "retired": false,
+    "hints": [
+      "Once sold car stereos before turning his focus fully to professional golf.",
+      "Born in Phoenix, Arizona.",
+      "Won 1 major championship, the 2002 PGA Championship at Hazeltine.",
+      "Held off a furious final-round charge from Tiger Woods to win.",
+      "Remains one of the more unlikely major champions of the 2000s.",
+      "Known for a fun-loving, unpolished personality relative to typical tour pros."
+    ]
+  },
+  {
+    "id": "shaun_micheel",
+    "name": "Shaun Micheel",
+    "aliases": ["shaun micheel"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1992 and spent years grinding on developmental tours before his breakthrough.",
+      "Born in Orlando, Florida.",
+      "Won 1 major championship, the 2003 PGA Championship at Oak Hill.",
+      "Sealed the win with a stunning approach shot that finished two inches from the cup on the final hole.",
+      "That remains one of the most memorable clutch shots in major championship history.",
+      "Recorded only one other PGA Tour win across the rest of his career."
+    ]
+  },
+  {
+    "id": "jimmy_walker",
+    "name": "Jimmy Walker",
+    "aliases": ["jimmy walker"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2001 after college golf at Baylor.",
+      "Born in Abilene, Texas.",
+      "Won 1 major championship, the 2016 PGA Championship at Baltusrol.",
+      "Broke through relatively late in his career, in his late 30s.",
+      "Was later diagnosed with a chronic autoimmune condition that affected his playing career.",
+      "Known for a smooth tempo and reliable ball-striking during his peak years."
+    ]
+  },
+  {
+    "id": "mike_weir",
+    "name": "Mike Weir",
+    "aliases": ["mike weir"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1992 after a standout amateur and college career.",
+      "Born in Sarnia, Ontario, Canada.",
+      "Won 1 major championship, the 2003 Masters, in a playoff over Len Mattiace.",
+      "Became the first Canadian man ever to win a men's major championship.",
+      "One of the most prominent left-handed golfers to reach the top of the sport.",
+      "His Masters win remains a landmark moment for Canadian golf."
     ]
   }
 ]

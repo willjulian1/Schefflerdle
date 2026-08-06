@@ -15,11 +15,19 @@
   <div class="eyebrow" id="eyebrow">MAJOR CHAMPIONSHIP DAILY</div>
   <h1>Schefflerdle</h1>
   <div class="dateline" id="dateline"></div>
+  <div class="streak-badge" id="streakBadge" style="display:none;"></div>
 </div>
 
 <div class="tab-row">
-  <button class="tab-btn active" id="dailyTab" data-type="daily">Daily</button>
-  <button class="tab-btn" id="unlimitedTab" data-type="unlimited">Unlimited</button>
+  <div class="tab-group">
+    <button class="tab-btn active" id="dailyTab" data-type="daily">Daily</button>
+    <button class="tab-btn" id="unlimitedTab" data-type="unlimited">Unlimited</button>
+  </div>
+  <div class="icon-group">
+    <button class="icon-btn" id="statsBtn" title="Stats">&#128202;</button>
+    <button class="icon-btn" id="soundBtn" title="Toggle sound">&#128266;</button>
+    <button class="icon-btn" id="helpBtn" title="How to play">?</button>
+  </div>
 </div>
 
 <div class="mode-row">
@@ -56,10 +64,37 @@
     <button class="close-btn" id="closeResultBtn" aria-label="Close">&times;</button>
     <div class="stamp" id="stamp"></div>
     <div class="answer-line" id="answerLine"></div>
+    <div class="countdown-line" id="countdownLine" style="display:none;"></div>
     <div class="share-row">
       <div class="share-grid" id="shareGrid"></div>
       <button id="shareBtn">Copy result</button>
     </div>
+  </div>
+</div>
+
+<div class="info-overlay" id="helpOverlay">
+  <div class="info-card" id="helpCard">
+    <button class="close-btn" id="closeHelpBtn" aria-label="Close">&times;</button>
+    <h2>How to Play</h2>
+    <p>Guess the golfer in 6 tries or fewer. A new hint unlocks after every wrong guess.</p>
+    <ul>
+      <li>Type a name and pick from the autocomplete list, or hit Skip if you're stuck &mdash; skipping counts as a try, same as a wrong guess.</li>
+      <li>Fewer guesses means a better score, using real golf scoring terms: Hole in One (1 guess), Eagle (2), Birdie (3), Par (4), Bogey (5), Double Bogey (6).</li>
+      <li>Toggle "Include retired legends" to widen or narrow the pool of possible golfers.</li>
+      <li><strong>Daily</strong> gives everyone the same golfer each day. <strong>Unlimited</strong> gives you a new random golfer every time, great for practice.</li>
+    </ul>
+    <p>Come back every day to build your streak!</p>
+  </div>
+</div>
+
+<div class="info-overlay" id="statsOverlay">
+  <div class="info-card" id="statsCard">
+    <button class="close-btn" id="closeStatsBtn" aria-label="Close">&times;</button>
+    <h2>Statistics</h2>
+    <div class="stats-grid" id="statsGrid"></div>
+    <h3 class="dist-heading">Guess Distribution</h3>
+    <div id="distribution"></div>
+    <p class="stats-footnote">Daily results only &mdash; Unlimited rounds aren't tracked.</p>
   </div>
 </div>
 
