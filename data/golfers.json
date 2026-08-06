@@ -1118,5 +1118,439 @@
       "One of the most prominent left-handed golfers to reach the top of the sport.",
       "His Masters win remains a landmark moment for Canadian golf."
     ]
+  },
+  {
+    "id": "gene_sarazen",
+    "name": "Gene Sarazen",
+    "aliases": ["gene sarazen", "the squire"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1920 and is credited with inventing the modern sand wedge.",
+      "Born in Harrison, New York, to Italian immigrant parents.",
+      "Won 7 major championships across the 1920s and 1930s.",
+      "One of only five golfers to complete the career Grand Slam.",
+      "Nicknamed 'The Squire' for his dapper on-course style.",
+      "Famous for holing a 4-wood for double eagle on the 15th at the 1935 Masters, the 'shot heard round the world.'"
+    ]
+  },
+  {
+    "id": "lee_trevino",
+    "name": "Lee Trevino",
+    "aliases": ["lee trevino", "the merry mex", "super mex"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1960 after growing up caddying near Dallas, Texas.",
+      "Born in Dallas, Texas, to a family of modest means.",
+      "Won 6 major championships, including 2 U.S. Opens and 2 Open Championships.",
+      "Known for his quick wit and constant chatter with fans and playing partners.",
+      "Nicknamed 'The Merry Mex' or 'Super Mex.'",
+      "Survived being struck by lightning at the 1975 Western Open."
+    ]
+  },
+  {
+    "id": "raymond_floyd",
+    "name": "Raymond Floyd",
+    "aliases": ["raymond floyd", "ray floyd"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1961 and had one of the longest winning careers in golf history.",
+      "Born in Fort Bragg, North Carolina.",
+      "Won 4 major championships spanning from 1969 to 1986.",
+      "Won the 1976 Masters by 8 shots, tying the tournament's 72-hole record at the time.",
+      "Became the oldest U.S. Open champion in history when he won in 1986 at age 43.",
+      "A fierce competitor known for his intense on-course stare."
+    ]
+  },
+  {
+    "id": "hale_irwin",
+    "name": "Hale Irwin",
+    "aliases": ["hale irwin"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1968 after also playing college football as a defensive back.",
+      "Born in Joplin, Missouri.",
+      "Won 3 U.S. Open championships across three different decades.",
+      "Famous for a joyous, high-fiving sprint down the 18th fairway after a clinching putt in 1990.",
+      "Became the oldest U.S. Open champion ever at the time, winning in 1990 at age 45.",
+      "One of the most dominant players in PGA Tour Champions history after turning 50."
+    ]
+  },
+  {
+    "id": "curtis_strange",
+    "name": "Curtis Strange",
+    "aliases": ["curtis strange"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1976 after a standout college career at Wake Forest.",
+      "Born in Norfolk, Virginia.",
+      "Won back-to-back U.S. Opens in 1988 and 1989.",
+      "Was the first golfer to do that since Ben Hogan in the early 1950s.",
+      "Later became a respected golf broadcaster.",
+      "Captained the U.S. Ryder Cup team in 2002."
+    ]
+  },
+  {
+    "id": "mark_omeara",
+    "name": "Mark O'Meara",
+    "aliases": ["mark omeara", "mark o'meara"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1980 and became one of Isleworth's most recognizable club members.",
+      "Born in Goldsboro, North Carolina, and close friends with a young Tiger Woods.",
+      "Won both the Masters and the Open Championship in the same year, 1998.",
+      "Did so at age 41, making him one of the oldest first-time major champions.",
+      "Won the Open at Royal Birkdale in a four-hole playoff.",
+      "Widely credited as an early mentor to Tiger Woods."
+    ]
+  },
+  {
+    "id": "ian_woosnam",
+    "name": "Ian Woosnam",
+    "aliases": ["ian woosnam", "woosie"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1976 despite being one of the shortest players on tour.",
+      "Born in Oswestry, Wales, known for prodigious power from a compact frame.",
+      "Won 1 major championship, the 1991 Masters.",
+      "Nicknamed 'Woosie' by fans and fellow players.",
+      "Reached world No. 1 the same year he won the Masters.",
+      "Later captained Europe's victorious 2006 Ryder Cup team."
+    ]
+  },
+  {
+    "id": "sandy_lyle",
+    "name": "Sandy Lyle",
+    "aliases": ["sandy lyle"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1977 after a standout amateur career in Scotland and England.",
+      "Born in Shrewsbury, England, to a Scottish golf professional father.",
+      "Won 2 major championships, the 1985 Open and 1988 Masters.",
+      "Became the first British golfer ever to win the Masters.",
+      "Famously hit a 7-iron from a fairway bunker to set up his winning birdie at Augusta.",
+      "A key figure in Europe's Ryder Cup resurgence of the 1980s."
+    ]
+  },
+  {
+    "id": "bernhard_langer",
+    "name": "Bernhard Langer",
+    "aliases": ["bernhard langer"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1972 and battled the putting yips multiple times across his career.",
+      "Born in Anhausen, West Germany.",
+      "Won 2 Masters titles, in 1985 and 1993.",
+      "Became the first German golfer to win a major championship.",
+      "Widely regarded as the greatest player in PGA Tour Champions history.",
+      "Continued winning senior majors well into his 60s."
+    ]
+  },
+  {
+    "id": "jose_maria_olazabal",
+    "name": "Jose Maria Olazabal",
+    "aliases": ["jose maria olazabal", "ollie"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1985 and formed a legendary Ryder Cup partnership with Seve Ballesteros.",
+      "Born in Hondarribia, Spain.",
+      "Won 2 Masters titles, in 1994 and 1999.",
+      "Overcame a severe case of rheumatoid arthritis in his feet mid-career to keep competing.",
+      "Later captained Europe's emotional 2012 Ryder Cup win, dedicated to Seve.",
+      "Considered one of the greatest short-game players of his generation."
+    ]
+  },
+  {
+    "id": "corey_pavin",
+    "name": "Corey Pavin",
+    "aliases": ["corey pavin"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1982 after a decorated amateur career at UCLA.",
+      "Born in Oxnard, California, known for elite shot-making despite modest length.",
+      "Won 1 major championship, the 1995 U.S. Open at Shinnecock Hills.",
+      "Famously hit a 4-wood to four feet on the final hole to seal that win.",
+      "Captained the U.S. Ryder Cup team in 2010.",
+      "Known throughout his career for a scrappy, creative short game."
+    ]
+  },
+  {
+    "id": "retief_goosen",
+    "name": "Retief Goosen",
+    "aliases": ["retief goosen", "the goose"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1990 and survived being struck by lightning as a teenager.",
+      "Born in Pietersburg, South Africa.",
+      "Won 2 U.S. Open championships, in 2001 and 2004.",
+      "Nicknamed 'The Goose,' known for an unflappable, ice-cool demeanor.",
+      "Won his first U.S. Open after a dramatic 18-hole playoff.",
+      "One of the calmest putters under pressure of his generation."
+    ]
+  },
+  {
+    "id": "angel_cabrera",
+    "name": "Angel Cabrera",
+    "aliases": ["angel cabrera", "el pato"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1989 after working as a caddie in his native Argentina.",
+      "Born in Cordoba, Argentina.",
+      "Won both the 2007 U.S. Open and the 2009 Masters.",
+      "Became the first golfer from Argentina to win a major championship.",
+      "Nicknamed 'El Pato' ('The Duck').",
+      "Beat Kenny Perry and Chad Campbell in a playoff to win the 2009 Masters."
+    ]
+  },
+  {
+    "id": "yani_e_yang",
+    "name": "Y.E. Yang",
+    "aliases": ["ye yang", "y.e. yang", "yang yong-eun"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1996 after starting golf relatively late as a teenager.",
+      "Born in Jeju, South Korea.",
+      "Won 1 major championship, the 2009 PGA Championship.",
+      "Became the first golfer born in Asia to win a men's major title.",
+      "Achieved that win by defeating Tiger Woods in the final round, the only time Tiger lost a major with a 54-hole lead.",
+      "Hit a memorable hybrid approach on the final hole to seal the upset."
+    ]
+  },
+  {
+    "id": "charl_schwartzel",
+    "name": "Charl Schwartzel",
+    "aliases": ["charl schwartzel"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2002 after a standout junior career in South Africa.",
+      "Born in Johannesburg, South Africa.",
+      "Won 1 major championship, the 2011 Masters.",
+      "Closed with four consecutive birdies on the back nine to win that Masters.",
+      "Later became a prominent figure and event winner on LIV Golf.",
+      "Part of a strong generation of South African major champions."
+    ]
+  },
+  {
+    "id": "bubba_watson",
+    "name": "Bubba Watson",
+    "aliases": ["bubba watson"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2003 and is entirely self-taught, having never taken a formal golf lesson.",
+      "Born in Bagdad, Florida, known for enormous, curving shot shapes.",
+      "Won 2 Masters titles, in 2012 and 2014.",
+      "Plays left-handed despite doing most other things right-handed.",
+      "Famously won the 2012 Masters with a miracle hooking wedge shot from the trees in a playoff.",
+      "Also known for his pink driver and quirky personality."
+    ]
+  },
+  {
+    "id": "danny_willett",
+    "name": "Danny Willett",
+    "aliases": ["danny willett"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2008 after a strong amateur career in England.",
+      "Born in Sheffield, England.",
+      "Won 1 major championship, the 2016 Masters.",
+      "Nearly missed the tournament entirely, only playing because of the birth of his first son.",
+      "Capitalized on a historic final-round collapse by the 54-hole leader to win.",
+      "Became the first English golfer to win the Masters since Nick Faldo."
+    ]
+  },
+  {
+    "id": "patrick_reed",
+    "name": "Patrick Reed",
+    "aliases": ["patrick reed", "captain america"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2011 after a standout, if controversial, college career.",
+      "Born in San Antonio, Texas.",
+      "Won 1 major championship, the 2018 Masters.",
+      "Nicknamed 'Captain America' for his fiery Ryder Cup performances.",
+      "Held off Rickie Fowler down the stretch to win that Masters green jacket.",
+      "Later became one of the first prominent players to join LIV Golf."
+    ]
+  },
+  {
+    "id": "gary_woodland",
+    "name": "Gary Woodland",
+    "aliases": ["gary woodland"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2007 after playing college basketball before switching fully to golf.",
+      "Born in Topeka, Kansas, known for elite athleticism and long drives.",
+      "Won 1 major championship, the 2019 U.S. Open at Pebble Beach.",
+      "Held off a hard-charging Brooks Koepka down the stretch to win.",
+      "Later underwent brain surgery in 2023 for a condition affecting his daily life.",
+      "Returned to competitive golf as an emotional comeback story after that surgery."
+    ]
+  },
+  {
+    "id": "jason_day",
+    "name": "Jason Day",
+    "aliases": ["jason day"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2006 after emigrating from Australia to the U.S. as a teenager to train.",
+      "Born in Beaudesert, Australia.",
+      "Won 1 major championship, the 2015 PGA Championship, with a record low score.",
+      "Reached world No. 1 shortly after that breakthrough win.",
+      "Known for a distinctive pre-shot routine involving closed eyes and visualization.",
+      "One of the most talented ball-strikers of his golden mid-2010s stretch."
+    ]
+  },
+  {
+    "id": "louis_oosthuizen",
+    "name": "Louis Oosthuizen",
+    "aliases": ["louis oosthuizen"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2002 and grew up near the same course as fellow South African stars.",
+      "Born in Mossel Bay, South Africa.",
+      "Won 1 major championship, the 2010 Open Championship at St Andrews, by 7 shots.",
+      "Has finished runner-up at all four majors at various points in his career.",
+      "Famous for an ace on the par-5 second hole at Augusta via a hosel-hit shot in 2012.",
+      "Later became a prominent LIV Golf player and team captain."
+    ]
+  },
+  {
+    "id": "wyndham_clark",
+    "name": "Wyndham Clark",
+    "aliases": ["wyndham clark"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2017 after college golf at Oregon and Oklahoma State.",
+      "Born in Denver, Colorado.",
+      "Won 1 major championship, the 2023 U.S. Open at Los Angeles Country Club.",
+      "Held off Rory McIlroy down the stretch in the final round to win.",
+      "Broke through relatively late for a major winner, in his late 20s.",
+      "Has spoken openly about the loss of his mother as a driving motivation."
+    ]
+  },
+  {
+    "id": "brian_harman",
+    "name": "Brian Harman",
+    "aliases": ["brian harman"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2009 after a standout college career at Georgia.",
+      "Born in Savannah, Georgia, one of the shorter hitters on tour.",
+      "Won 1 major championship, the 2023 Open Championship at Royal Liverpool.",
+      "Won wire-to-wire, leading after every round of the tournament.",
+      "Plays left-handed and is known for elite bunker and scrambling skills.",
+      "Won that Open by six shots, a surprisingly dominant margin."
+    ]
+  },
+  {
+    "id": "jason_dufner",
+    "name": "Jason Dufner",
+    "aliases": ["jason dufner", "dufnering"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2000 after college golf at Auburn.",
+      "Born in Cleveland, Ohio, known for an unusually flat, deadpan expression on course.",
+      "Won 1 major championship, the 2013 PGA Championship.",
+      "His slumped, disinterested-looking sitting pose briefly became an internet meme called 'Dufnering.'",
+      "Considered one of the more understated, low-key major champions of his era.",
+      "Known for a smooth, compact swing built for consistency."
+    ]
+  },
+  {
+    "id": "michael_campbell",
+    "name": "Michael Campbell",
+    "aliases": ["michael campbell"],
+    "retired": true,
+    "hints": [
+      "Turned pro in 1993 and represented New Zealand throughout his career.",
+      "Born in Hastings, New Zealand, of Maori descent.",
+      "Won 1 major championship, the 2005 U.S. Open at Pinehurst.",
+      "Beat Tiger Woods by two shots to win that title.",
+      "Became just the second golfer from New Zealand to win a men's major.",
+      "His win remains one of the more surprising major upsets of the 2000s."
+    ]
+  },
+  {
+    "id": "ben_curtis",
+    "name": "Ben Curtis",
+    "aliases": ["ben curtis"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2000 and was playing in his very first major championship start.",
+      "Born in Ostrander, Ohio.",
+      "Won 1 major championship, the 2003 Open Championship at Royal St George's.",
+      "Was ranked 396th in the world at the time, one of the biggest upsets in major history.",
+      "Remains the only golfer to win a major on his first career start.",
+      "His win stunned a leaderboard full of far more established stars."
+    ]
+  },
+  {
+    "id": "trevor_immelman",
+    "name": "Trevor Immelman",
+    "aliases": ["trevor immelman"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1999 after a strong junior and amateur career in South Africa.",
+      "Born in Cape Town, South Africa.",
+      "Won 1 major championship, the 2008 Masters.",
+      "Held off a hard-charging Tiger Woods in the final round to win his green jacket.",
+      "Later transitioned into a prominent role as a golf broadcaster.",
+      "Now a lead commentator for CBS's golf coverage."
+    ]
+  },
+  {
+    "id": "stewart_cink",
+    "name": "Stewart Cink",
+    "aliases": ["stewart cink"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1995 after college golf at Georgia Tech.",
+      "Born in Huntsville, Alabama.",
+      "Won 1 major championship, the 2009 Open Championship at Turnberry.",
+      "Beat 59-year-old Tom Watson in a playoff after Watson nearly won at almost 60.",
+      "Later became a two-time winner well into his 40s during the pandemic era.",
+      "Known for his tall frame and easygoing demeanor."
+    ]
+  },
+  {
+    "id": "graeme_mcdowell",
+    "name": "Graeme McDowell",
+    "aliases": ["graeme mcdowell", "g-mac"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2002 after a standout amateur career in Northern Ireland.",
+      "Born in Portrush, Northern Ireland.",
+      "Won 1 major championship, the 2010 U.S. Open at Pebble Beach.",
+      "Became the first European golfer to win the U.S. Open in 40 years.",
+      "Nicknamed 'G-Mac' by fans and broadcasters.",
+      "A key clutch performer for Europe across several Ryder Cups."
+    ]
+  },
+  {
+    "id": "darren_clarke",
+    "name": "Darren Clarke",
+    "aliases": ["darren clarke"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 1990 and became one of Northern Ireland's most beloved golfers.",
+      "Born in Dungannon, Northern Ireland.",
+      "Won 1 major championship, the 2011 Open Championship at Royal St George's.",
+      "Won it at age 42, considered a career-crowning achievement after years of near-misses.",
+      "A close friend and mentor figure to fellow Northern Irish stars Rory McIlroy and Graeme McDowell.",
+      "Later captained Europe's Ryder Cup team in 2016."
+    ]
+  },
+  {
+    "id": "cameron_smith",
+    "name": "Cameron Smith",
+    "aliases": ["cameron smith"],
+    "retired": false,
+    "hints": [
+      "Turned pro in 2013 after a standout junior career in Australia.",
+      "Born in Brisbane, Australia, known for one of the best putting strokes in golf.",
+      "Won 1 major championship, the 2022 Open Championship at St Andrews.",
+      "Shot a final-round 64 at the Old Course to overtake Cameron Young and Rory McIlroy.",
+      "Instantly recognizable for his signature mullet hairstyle.",
+      "Left the PGA Tour to join LIV Golf shortly after that major win."
+    ]
   }
 ]
