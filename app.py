@@ -19,16 +19,18 @@ with open(DATA_PATH) as f:
 GOLFERS_BY_ID = {g["id"]: g for g in GOLFERS}
 MAX_HINTS = 6
 
+VALID_MAJORS = {"masters", "us_open", "open_championship", "pga_championship"}
+
 # Purely cosmetic floor for the archive date picker -- the selection math
 # works for any date, this just keeps the picker from offering meaningless
 # ancient dates.
 EARLIEST_DATE = date(2024, 1, 1)
 
-# In-memory server-side game state, keyed by (session_id, date, pool).
+# In-memory server-side game state, keyed by (session_id, date, major).
 # Keeping this server-side (rather than in the cookie) means the answer
 # is never sent to the browser until the puzzle is solved or lost.
 #
-# The golfer for any given date+pool is fully deterministic (see
+# The golfer for any given date+major is fully deterministic (see
 # pick_golfer_for_date below), so "today's" game and any "archive" game
 # for a past date both live in this same dict -- there's no meaningful
 # difference between them other than which date the player is looking at.
@@ -45,17 +47,26 @@ SCORE_TERMS = {
 FAIL_TERM = "PICKED UP"
 
 
-def get_pool(pool_name):
-    if pool_name == "current":
-        return [g for g in GOLFERS if not g["retired"]]
-    return GOLFERS
+def normalize_major(major):
+    if major in VALID_MAJORS:
+        return major
+    return "any"
 
 
-def pick_golfer_for_date(pool_name, date_str):
-    pool = get_pool(pool_name)
+def get_pool(major="any"):
+    if major == "any":
+        return GOLFERS
+    return [g for g in GOLFERS if major in g.get("majors", [])]
+
+
+def pick_golfer_for_date(major, date_str):
+    pool = get_pool(major)
     if not pool:
+        # Guard against a major with zero golfers (shouldn't happen with
+        # the current dataset, but fail safe rather than crash if it ever
+        # does).
         pool = GOLFERS
-    digest = hashlib.md5(f"{date_str}:{pool_name}".encode()).hexdigest()
+    digest = hashlib.md5(f"{date_str}:{major}".encode()).hexdigest()
     idx = int(digest, 16) % len(pool)
     return pool[idx]
 
@@ -96,11 +107,11 @@ def new_game_state(golfer):
     }
 
 
-def get_game(pool_name, date_str):
+def get_game(major, date_str):
     sid = get_session_id()
-    key = (sid, date_str, pool_name)
+    key = (sid, date_str, major)
     if key not in GAMES:
-        GAMES[key] = new_game_state(pick_golfer_for_date(pool_name, date_str))
+        GAMES[key] = new_game_state(pick_golfer_for_date(major, date_str))
     return GAMES[key]
 
 
@@ -136,28 +147,28 @@ def index():
 
 @app.route("/api/golfers")
 def api_golfers():
-    pool_name = request.args.get("pool", "all")
-    pool = get_pool(pool_name)
+    major = normalize_major(request.args.get("major", "any"))
+    pool = get_pool(major)
     names = sorted([{"id": g["id"], "name": g["name"]} for g in pool], key=lambda x: x["name"])
     return jsonify(names)
 
 
 @app.route("/api/game")
 def api_game():
-    pool_name = request.args.get("pool", "all")
+    major = normalize_major(request.args.get("major", "any"))
     date_str = resolve_date_param(request.args.get("date"))
-    game = get_game(pool_name, date_str)
+    game = get_game(major, date_str)
     return jsonify(public_state(game, date_str))
 
 
 @app.route("/api/guess", methods=["POST"])
 def api_guess():
     data = request.get_json(force=True)
-    pool_name = data.get("pool", "all")
+    major = normalize_major(data.get("major", "any"))
     date_str = resolve_date_param(data.get("date"))
     guess_name = (data.get("guess") or "").strip()
 
-    game = get_game(pool_name, date_str)
+    game = get_game(major, date_str)
 
     if game["solved"] or game["failed"]:
         return jsonify(public_state(game, date_str))
@@ -190,10 +201,10 @@ def api_skip():
     as a wrong guess toward the 6-try limit, so it can't be used to see
     every hint for free."""
     data = request.get_json(force=True)
-    pool_name = data.get("pool", "all")
+    major = normalize_major(data.get("major", "any"))
     date_str = resolve_date_param(data.get("date"))
 
-    game = get_game(pool_name, date_str)
+    game = get_game(major, date_str)
 
     if game["solved"] or game["failed"]:
         return jsonify(public_state(game, date_str))

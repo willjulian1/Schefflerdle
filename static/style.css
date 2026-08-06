@@ -135,15 +135,6 @@ body {
   justify-content: center;
 }
 
-.mode-toggle {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-  font-size: 13px;
-  color: rgba(239,230,210,0.85);
-}
-
 .archive-nav {
   display: flex;
   align-items: center;
@@ -179,36 +170,6 @@ body {
   padding: 6px 10px;
 }
 
-.mode-toggle input { display: none; }
-
-.toggle-track {
-  width: 38px;
-  height: 20px;
-  background: rgba(239,230,210,0.15);
-  border-radius: 999px;
-  position: relative;
-  transition: background 0.2s ease;
-  flex-shrink: 0;
-}
-
-.toggle-thumb {
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: var(--cream);
-  transition: transform 0.2s ease;
-}
-
-.mode-toggle input:checked + .toggle-track {
-  background: var(--sand);
-}
-.mode-toggle input:checked + .toggle-track .toggle-thumb {
-  transform: translateX(18px);
-}
-
 .view-result-btn {
   background: transparent;
   border: 1px solid var(--sand);
@@ -225,6 +186,18 @@ body {
 .view-result-btn:hover {
   background: var(--sand);
   color: var(--pine-deep);
+}
+
+.major-select {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink);
+  background: var(--cream);
+  border: 2px solid var(--sand);
+  border-radius: 999px;
+  padding: 6px 12px;
+  cursor: pointer;
 }
 
 .scorecard {

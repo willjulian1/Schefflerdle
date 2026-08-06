@@ -13,7 +13,7 @@ const answerLine = document.getElementById('answerLine');
 const countdownLine = document.getElementById('countdownLine');
 const shareGrid = document.getElementById('shareGrid');
 const shareBtn = document.getElementById('shareBtn');
-const modeToggle = document.getElementById('modeToggle');
+const majorFilter = document.getElementById('majorFilter');
 const dateline = document.getElementById('dateline');
 const eyebrow = document.getElementById('eyebrow');
 const dailyTab = document.getElementById('dailyTab');
@@ -267,8 +267,8 @@ function stopCountdown() {
 
 /* ---------------- Core game logic ---------------- */
 
-function currentPool() {
-  return modeToggle.checked ? 'all' : 'current';
+function currentMajor() {
+  return majorFilter.value;
 }
 
 function updateHeader() {
@@ -292,13 +292,13 @@ function updateHeader() {
 }
 
 async function loadGolferList() {
-  const res = await fetch(`/api/golfers?pool=${currentPool()}`);
+  const res = await fetch(`/api/golfers?major=${currentMajor()}`);
   allGolfers = await res.json();
 }
 
 async function loadGame() {
   const dateParam = gameType === 'archive' ? `&date=${archiveDate}` : '';
-  const res = await fetch(`/api/game?pool=${currentPool()}${dateParam}`);
+  const res = await fetch(`/api/game?major=${currentMajor()}${dateParam}`);
   const state = await res.json();
   render(state, false);
 }
@@ -489,7 +489,7 @@ async function submitGuess() {
     const res = await fetch('/api/guess', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ pool: currentPool(), guess, date: dateParam })
+      body: JSON.stringify({ major: currentMajor(), guess, date: dateParam })
     });
     const state = await res.json();
     guessInput.value = '';
@@ -510,7 +510,7 @@ async function skipHint() {
     const res = await fetch('/api/skip', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ pool: currentPool(), date: dateParam })
+      body: JSON.stringify({ major: currentMajor(), date: dateParam })
     });
     const state = await res.json();
     guessInput.value = '';
@@ -520,7 +520,7 @@ async function skipHint() {
   }
 }
 
-modeToggle.addEventListener('change', async () => {
+majorFilter.addEventListener('change', async () => {
   await loadGolferList();
   await loadGame();
 });

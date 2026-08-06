@@ -31,11 +31,13 @@
 </div>
 
 <div class="mode-row">
-  <label class="mode-toggle">
-    <input type="checkbox" id="modeToggle">
-    <span class="toggle-track"><span class="toggle-thumb"></span></span>
-    <span class="mode-label">Include retired legends</span>
-  </label>
+  <select id="majorFilter" class="major-select">
+    <option value="any">Any major</option>
+    <option value="masters">Masters</option>
+    <option value="us_open">U.S. Open</option>
+    <option value="open_championship">Open Championship</option>
+    <option value="pga_championship">PGA Championship</option>
+  </select>
   <button id="viewResultBtn" class="view-result-btn" style="display:none;">View Result</button>
 </div>
 
@@ -85,7 +87,7 @@
     <ul>
       <li>Type a name and pick from the autocomplete list, or hit Skip if you're stuck &mdash; skipping counts as a try, same as a wrong guess.</li>
       <li>Fewer guesses means a better score, using real golf scoring terms: Hole in One (1 guess), Eagle (2), Birdie (3), Par (4), Bogey (5), Double Bogey (6).</li>
-      <li>Toggle "Include retired legends" to widen or narrow the pool of possible golfers.</li>
+      <li>Use the major dropdown to only be quizzed on winners of a specific major, past or present.</li>
       <li><strong>Daily</strong> gives everyone the same golfer each day. <strong>Archive</strong> lets you replay any past day's puzzle &mdash; future days are locked so nothing gets spoiled.</li>
     </ul>
     <p>Come back every day to build your streak!</p>
@@ -103,7 +105,7 @@
   </div>
 </div>
 
-<div class="footer-note">Developed by @fortheprogram on Twitter/X</div>
+<div class="footer-note">New golfer every day &middot; hints get easier with every wrong guess</div>
 
 <script src="{{ url_for('static', filename='game.js') }}"></script>
 </body>
