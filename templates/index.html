@@ -21,7 +21,7 @@
 <div class="tab-row">
   <div class="tab-group">
     <button class="tab-btn active" id="dailyTab" data-type="daily">Daily</button>
-    <button class="tab-btn" id="unlimitedTab" data-type="unlimited">Unlimited</button>
+    <button class="tab-btn" id="archiveTab" data-type="archive">Archive</button>
   </div>
   <div class="icon-group">
     <button class="icon-btn" id="statsBtn" title="Stats">&#128202;</button>
@@ -36,8 +36,13 @@
     <span class="toggle-track"><span class="toggle-thumb"></span></span>
     <span class="mode-label">Include retired legends</span>
   </label>
-  <button id="newRoundBtn" class="new-round-btn" style="display:none;">New Golfer &#8635;</button>
   <button id="viewResultBtn" class="view-result-btn" style="display:none;">View Result</button>
+</div>
+
+<div class="archive-nav" id="archiveNav" style="display:none;">
+  <button id="prevDayBtn" class="nav-arrow" title="Previous day">&#8592;</button>
+  <input type="date" id="archiveDate" />
+  <button id="nextDayBtn" class="nav-arrow" title="Next day">&#8594;</button>
 </div>
 
 <div class="scorecard" id="scorecard">
@@ -81,7 +86,7 @@
       <li>Type a name and pick from the autocomplete list, or hit Skip if you're stuck &mdash; skipping counts as a try, same as a wrong guess.</li>
       <li>Fewer guesses means a better score, using real golf scoring terms: Hole in One (1 guess), Eagle (2), Birdie (3), Par (4), Bogey (5), Double Bogey (6).</li>
       <li>Toggle "Include retired legends" to widen or narrow the pool of possible golfers.</li>
-      <li><strong>Daily</strong> gives everyone the same golfer each day. <strong>Unlimited</strong> gives you a new random golfer every time, great for practice.</li>
+      <li><strong>Daily</strong> gives everyone the same golfer each day. <strong>Archive</strong> lets you replay any past day's puzzle &mdash; future days are locked so nothing gets spoiled.</li>
     </ul>
     <p>Come back every day to build your streak!</p>
   </div>

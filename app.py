@@ -1,7 +1,6 @@
 import json
 import hashlib
 import uuid
-import random
 import os
 from datetime import date
 from pathlib import Path
@@ -20,15 +19,20 @@ with open(DATA_PATH) as f:
 GOLFERS_BY_ID = {g["id"]: g for g in GOLFERS}
 MAX_HINTS = 6
 
-# In-memory server-side game state. Keeping this server-side (rather than
-# in the cookie) means the answer is never sent to the browser until the
-# puzzle is solved or lost.
+# Purely cosmetic floor for the archive date picker -- the selection math
+# works for any date, this just keeps the picker from offering meaningless
+# ancient dates.
+EARLIEST_DATE = date(2024, 1, 1)
+
+# In-memory server-side game state, keyed by (session_id, date, pool).
+# Keeping this server-side (rather than in the cookie) means the answer
+# is never sent to the browser until the puzzle is solved or lost.
 #
-# DAILY_GAMES is keyed by (session_id, date, pool) -> one puzzle per day.
-# UNLIMITED_GAMES is keyed by (session_id, pool) -> one active round at a
-# time, replaced whenever the player starts a new one.
-DAILY_GAMES = {}
-UNLIMITED_GAMES = {}
+# The golfer for any given date+pool is fully deterministic (see
+# pick_golfer_for_date below), so "today's" game and any "archive" game
+# for a past date both live in this same dict -- there's no meaningful
+# difference between them other than which date the player is looking at.
+GAMES = {}
 
 SCORE_TERMS = {
     1: "HOLE IN ONE",
@@ -47,21 +51,31 @@ def get_pool(pool_name):
     return GOLFERS
 
 
-def pick_daily_golfer(pool_name):
+def pick_golfer_for_date(pool_name, date_str):
     pool = get_pool(pool_name)
     if not pool:
         pool = GOLFERS
-    today = date.today().isoformat()
-    digest = hashlib.md5(f"{today}:{pool_name}".encode()).hexdigest()
+    digest = hashlib.md5(f"{date_str}:{pool_name}".encode()).hexdigest()
     idx = int(digest, 16) % len(pool)
     return pool[idx]
 
 
-def pick_random_golfer(pool_name):
-    pool = get_pool(pool_name)
-    if not pool:
-        pool = GOLFERS
-    return random.choice(pool)
+def resolve_date_param(raw_date_str):
+    """Clamps any requested date to [EARLIEST_DATE, today]. Blocking
+    future dates is what makes archive mode spoiler-proof -- you simply
+    can't ask the server for tomorrow's answer."""
+    today = date.today()
+    if not raw_date_str:
+        return today.isoformat()
+    try:
+        requested = date.fromisoformat(raw_date_str)
+    except ValueError:
+        return today.isoformat()
+    if requested > today:
+        return today.isoformat()
+    if requested < EARLIEST_DATE:
+        return EARLIEST_DATE.isoformat()
+    return requested.isoformat()
 
 
 def get_session_id():
@@ -82,29 +96,23 @@ def new_game_state(golfer):
     }
 
 
-def get_game(game_type, pool_name):
+def get_game(pool_name, date_str):
     sid = get_session_id()
-    if game_type == "unlimited":
-        key = (sid, pool_name)
-        if key not in UNLIMITED_GAMES:
-            UNLIMITED_GAMES[key] = new_game_state(pick_random_golfer(pool_name))
-        return UNLIMITED_GAMES[key]
-    else:
-        today = date.today().isoformat()
-        key = (sid, today, pool_name)
-        if key not in DAILY_GAMES:
-            DAILY_GAMES[key] = new_game_state(pick_daily_golfer(pool_name))
-        return DAILY_GAMES[key]
+    key = (sid, date_str, pool_name)
+    if key not in GAMES:
+        GAMES[key] = new_game_state(pick_golfer_for_date(pool_name, date_str))
+    return GAMES[key]
 
 
 def normalize(s):
     return "".join(ch for ch in s.lower().strip() if ch.isalnum() or ch.isspace())
 
 
-def public_state(game):
+def public_state(game, date_str):
     golfer = GOLFERS_BY_ID[game["golfer_id"]]
     finished = game["solved"] or game["failed"]
     result = {
+        "date": date_str,
         "hints": golfer["hints"][: game["hints_revealed"]],
         "max_hints": MAX_HINTS,
         "guesses": game["guesses"],
@@ -136,23 +144,23 @@ def api_golfers():
 
 @app.route("/api/game")
 def api_game():
-    game_type = request.args.get("type", "daily")
     pool_name = request.args.get("pool", "all")
-    game = get_game(game_type, pool_name)
-    return jsonify(public_state(game))
+    date_str = resolve_date_param(request.args.get("date"))
+    game = get_game(pool_name, date_str)
+    return jsonify(public_state(game, date_str))
 
 
 @app.route("/api/guess", methods=["POST"])
 def api_guess():
     data = request.get_json(force=True)
-    game_type = data.get("type", "daily")
     pool_name = data.get("pool", "all")
+    date_str = resolve_date_param(data.get("date"))
     guess_name = (data.get("guess") or "").strip()
 
-    game = get_game(game_type, pool_name)
+    game = get_game(pool_name, date_str)
 
     if game["solved"] or game["failed"]:
-        return jsonify(public_state(game))
+        return jsonify(public_state(game, date_str))
 
     if not guess_name:
         return jsonify({"error": "empty guess"}), 400
@@ -173,7 +181,7 @@ def api_guess():
         if len(game["guesses"]) >= MAX_HINTS:
             game["failed"] = True
 
-    return jsonify(public_state(game))
+    return jsonify(public_state(game, date_str))
 
 
 @app.route("/api/skip", methods=["POST"])
@@ -182,13 +190,13 @@ def api_skip():
     as a wrong guess toward the 6-try limit, so it can't be used to see
     every hint for free."""
     data = request.get_json(force=True)
-    game_type = data.get("type", "daily")
     pool_name = data.get("pool", "all")
+    date_str = resolve_date_param(data.get("date"))
 
-    game = get_game(game_type, pool_name)
+    game = get_game(pool_name, date_str)
 
     if game["solved"] or game["failed"]:
-        return jsonify(public_state(game))
+        return jsonify(public_state(game, date_str))
 
     game["guesses"].append({"text": "Skipped", "correct": False, "skipped": True})
 
@@ -197,19 +205,7 @@ def api_skip():
     if len(game["guesses"]) >= MAX_HINTS:
         game["failed"] = True
 
-    return jsonify(public_state(game))
-
-
-@app.route("/api/new-round", methods=["POST"])
-def api_new_round():
-    """Unlimited mode only: force-starts a fresh round, discarding any
-    in-progress or finished round for this session/pool."""
-    data = request.get_json(force=True)
-    pool_name = data.get("pool", "all")
-    sid = get_session_id()
-    key = (sid, pool_name)
-    UNLIMITED_GAMES[key] = new_game_state(pick_random_golfer(pool_name))
-    return jsonify(public_state(UNLIMITED_GAMES[key]))
+    return jsonify(public_state(game, date_str))
 
 
 if __name__ == "__main__":
